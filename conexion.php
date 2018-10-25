@@ -3,7 +3,7 @@
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$server = $url["host"];
+$server = "nada";
 $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
@@ -14,5 +14,5 @@ $db = substr($url["path"], 1);
 				. ") " . $mysqli -> mysqli_connect_error());
 		}
 		
-		
+	
 ?>
