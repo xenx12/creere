@@ -1,0 +1,88 @@
+    #panel1
+    {
+        background: -moz-linear-gradient(282deg, rgba(0,255,255,1) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,255,255,1)), color-stop(89%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(282deg, rgba(0,255,255,1) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(282deg, rgba(0,255,255,1) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(282deg, rgba(0,255,255,1) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* ie10+ */
+        background: linear-gradient(168deg, rgba(0,255,255,1) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#000000',GradientType=0 ); /* ie6-9 */    
+    }
+
+    #panel2
+    {
+        background: -moz-linear-gradient(282deg, rgba(255,193,7) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,193,7)), color-stop(89%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(282deg, rgba(255,193,7) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(282deg, rgba(255,193,7) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(282deg, rgba(255,193,7) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* ie10+ */
+        background: linear-gradient(168deg, rgba(255,193,7) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#000000',GradientType=0 ); /* ie6-9 */    
+    } 
+  
+    #panel3
+    {
+        background: -moz-linear-gradient(282deg, rgba(76,175,80) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(76,175,80)), color-stop(89%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(282deg, rgba(76,175,80) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(282deg, rgba(76,175,80) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(282deg, rgba(76,175,80) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* ie10+ */
+        background: linear-gradient(168deg, rgba(76,175,80) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#000000',GradientType=0 ); /* ie6-9 */    
+    } 
+             
+    #panel4
+    {
+    background: -moz-linear-gradient(282deg, rgba(33,150,243) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(33,150,243)), color-stop(89%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(282deg, rgba(33,150,243) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(282deg, rgba(33,150,243) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(282deg, rgba(33,150,243) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* ie10+ */
+    background: linear-gradient(168deg, rgba(33,150,243) 0%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#000000',GradientType=0 ); /* ie6-9 */    
+    }
+  
+    #logo
+    {
+    width: 50%;
+    height: 45%;
+    background:url(logo.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 25%;
+        /*
+        Trabajar en la parte responsive de la version mobile
+        */
+  
+    }
+
+    #texto-home
+    {
+    text-decoration:none; 
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #777;
+    font-size: 1.2rem;
+    }
+      
+    #paneles
+    {
+    padding: 0px;
+    height: 100%;
+    }
+    #izquierdo
+    {
+    height: 100%;
+    margin:0;    
+    }
+    #principal
+    {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    }
+  
+    
+  

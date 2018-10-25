@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+
+
+ <!--LAS PARTES IMPORTANTES ESTAN SEPARADAS POR GRANDES ESPACIOS Y ESTAN COMENTADAS
+  SON SOLO TRES PARTES LAS QUE TIENES QUE TOCAR.
+
+  LA PARTE DE REGISTRO: #formregistro
+  LA PARTE VISUAL DE MOSTRAR CODIGO: #visualcodigo
+  EL FORM DEL CODIGO: #formcodigo
+
+  puedes llegar a ellas rapidamente apretando 
+  Ctrl + F y luego el nombre correspondiente ejemplo "#form"
+-->
+
+
+
+
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Fredoka+One|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+
+  <body>
+
+                  <div id="fb-root"></div>
+                  <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.1&appId=557565347918820&autoLogAppEvents=1';
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));</script>
+
+      
+
+    <div class="container" id="principal">
+        
+        <div class="row" id="izquierdo">
+
+            <div class="col l6 m6" id="paneles">
+
+                    <div class="carousel carousel-slider center" id="izquierdo">
+
+                            <div class="carousel-item white-text" id="panel1" >
+                              <h3 style="font-family: 'Acme', sans-serif;">Informacion del Evento</h3>
+                              <h5 style="font-family: 'Acme', sans-serif;">Tema: "Creere"</h5>
+                              <h5 style="font-family: 'Acme', sans-serif;">Lugar: "Parque Menca de Leoni"</h5>
+                              <h5 style="font-family: 'Acme', sans-serif;">Hora: 5:00pm - 9:00pm</h5>
+                              <h5 style="font-family: 'Acme', sans-serif;">Direccion: "Biruaca, esto esto esto esto esto"</h5>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5039233268376!2d-67.5241265859823!3d7.842207708605568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e787d8217140acf%3A0xec577a3245c0d19f!2sMenca+de+Leoni%2C+La+Palmita+7007%2C+Apure!5e0!3m2!1ses!2sve!4v1538486842907" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item white-text" id="panel2" >
+                              <h3 style="font-family: 'Acme', sans-serif;">Para que queremos esta informacion?</h3>
+                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet natus dolore obcaecati excepturi similique voluptas dolorum nulla commodi, cumque saepe libero, laborum exercitationem vero accusantium fuga deleniti voluptatum omnis fugiat. asdasss asdasd sd asd asd asd asd asdasd as dasd as sdasdas asd asdas </h5>
+                            </div>
+                            <div class="carousel-item green white-text" href="#three!" id="panel3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- Aqui parte visual de MostrarCodigo  #visualcodigo-->
+
+
+
+
+
+
+
+                              <h3 style="font-family: 'Acme', sans-serif;">Por que es importante este codigo?</h3>
+                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet natus dolore obcaecati excepturi similique voluptas dolorum nulla commodi, cumque saepe libero, laborum exercitationem vero accusantium fuga deleniti voluptatum omnis fugiat. asdasss asdasd sd asd asd asd asd asdasd as dasd as sdasdas asd asdas </h5>
+                              <h4 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Tu Codigo es:</h4>
+                              <h3 > <spam id="digito1">*</spam><spam id="digito2" class=" amber-text">*</spam><spam id="digito3" class="green-text">*</spam><spam id="digito4" class=" blue-text">*</spam></h3>
+                           
+                           
+                           
+                              <!-- Fin parte visual de MostrarCodigo -->
+
+                           
+                           
+                           
+                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           
+                           
+                           
+                           
+                           
+                           
+                            </div>
+                            <div class="carousel-item blue white-text" href="#four!" id="panel4">
+                              <h3 style="font-family: 'Acme', sans-serif;">Aqui inspirate</h3>
+                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet natus dolore obcaecati excepturi similique voluptas dolorum nulla commodi, cumque saepe libero, laborum exercitationem vero accusantium fuga deleniti voluptatum omnis fugiat. asdasss asdasd sd asd asd asd asd asdasd as dasd as sdasdas asd asdas </h5>
+                            <div class="fixed-action-btn">
+                                
+                                <a class="btn-floating btn-small black" href="http://www.google.com/" target=”_blank”>
+                                  <img src="facebook.png" alt="">                      
+                                </a>
+                                <a class="btn-floating btn-small black" href="http://www.google.com/" target=”_blank”>
+                                  <img src="twitter.png" alt="">                      
+                                </a>
+                                <a class="btn-floating btn-small black" href="http://www.google.com/" target=”_blank”>
+                                  <img src="instagram.png" alt="">                      
+                                </a>
+                                <a class="btn-floating btn-small black" href="http://www.google.com/" target=”_blank”>
+                                  <img src="youtube.png" alt="">                      
+                                </a>
+                              </div>
+
+                            </div>
+                    </div>
+            
+            </div>
+            <div class="col l6 m6 s12" id="paneles">
+
+                    <div class="carousel carousel-slider center" id="izquierdo" >
+                            <div class="carousel-fixed-item center">
+
+                                <a id="Home" class="btn-floating btn-small waves-effect waves-light black" onclick="pasar(0)"><i class="material-icons">home</i></a>
+                                <a id="Registro" class="btn-floating btn-small waves-effect waves-light black" onclick="pasar(1)"><i class="material-icons">add</i></a>
+                                <a id="Codigo" class="btn-floating btn-small waves-effect waves-light black" onclick="pasar(2)"><i class="material-icons">fiber_pin</i></a>
+                                <a id="Informacion" class="btn-floating btn-small waves-effect waves-light black" onclick="pasar(3)"><i class="material-icons">description</i></a>
+                                 
+                            </div> 
+                              <div class="carousel-item  white-text" href="#one!" >
+                               
+                              <h2 class="black-text">Bienvenido</h2>
+                            
+                             <div id="logo"></div>
+                                
+                           
+                             <p id="texto-home" >Hola yo soy jose Andres, me gusta el yogurt, te gusta la leche piche? dale al boton si es asi.</p> 
+                              <center> 
+                                <a id="Play" class="btn-floating btn-large waves-effect waves-light black"  onclick="pasar(1)"><i class="material-icons">play_arrow</i></a>
+                              </center>
+                              
+                              
+                            </div>
+
+                            <div class="carousel-item amber lighten-5 black-text" href="#two!" id="dos">
+                              <h2>Ingresa tus datos</h2>
+                              
+                              <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- Aqui el form de REGISTRO  #formregistro-->
+
+                                <form class="col s12">
+
+                                  <div class="row">
+                                    <div class="input-field col s5 offset-s1">
+                                      <input placeholder="Jose" id="nombre" type="text" class="validate">
+                                      <label for="nombre">Nombre</label>
+                                    </div>
+                                    <div class="input-field col s5">
+                                      <input placeholder="Castillo" id="apellido" type="text" class="validate">
+                                      <label for="apellido">Apellido</label>
+                                    </div>
+
+                                    <div class="input-field col s5 offset-s1">
+                                      <input placeholder="23423545" id="cedula" type="text" class="validate">
+                                      <label for="cedula">Cedula</label>
+                                    </div>
+
+                                    <div class="input-field col s10 offset-s1">
+                                      <input placeholder="Urb. Los Tamarindos Calle 12 casa 321" id="direccion" type="text" class="validate">
+                                      <label for="direccion">Direccion</label>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="row">
+                                    <div class="btn waves-effect waves-light amber" onclick="metodos()" >Registrarme
+                                      <i class="material-icons right">send</i>
+                                    </div>
+                                   
+                                    
+                                  </div>
+                                  <div class="row">
+                                    <div class="col s10 offset-s1">
+                                      <a onclick="pasar(2)" >¿Has olvidado tu codigo?</a>
+                                    </div>
+                                  </div>
+
+                                </form>
+
+                                <!-- Aqui TERMINA el form de REGISTRO-->
+
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              </div>
+                              
+                            </div>
+                            <div class="carousel-item green lighten-5 black-text" href="#three!">
+                              <h2>Mostrar Codigo</h2>
+                              <p style="margin-left: 10%; margin-right: 10%;" class="black-text">Recuerda lo importante que es este codigo, asi que no olvides anotarlo.</p>
+
+                              <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- Aqui parte de MostrarCodigo  #formcodigo-->
+
+
+
+
+                                <form class="col s12">
+
+                                  <div class="row">
+                                    <div class="input-field col s6 offset-s3">
+                                      <input placeholder="23423545" id="cedula" type="text" class="validate">
+                                      <label for="cedula">Cedula</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <button class="btn waves-effect waves-light green" type="submit" name="action">Mostrar
+                                        <i class="material-icons right">send</i>
+                                      </button>
+                                  
+                                    
+                                  </div>
+                                  
+                                  <div class="row">
+                                      <div class="col s10 offset-s1">
+                                        <a onclick="pasar(3)" >¿Quieres saber mas sobre el evento?</a>
+                                      </div>
+                                  </div>
+                                  
+                                </form>
+
+
+                                 <!-- Fin parte de MostrarCodigo -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              </div>
+
+
+
+
+
+
+
+                            </div>
+                            <div class="carousel-item blue lighten-5 black-text" style="overflow-y: scroll; height: 100%; padding-left: 2.5%" href="#four!">
+                                <div  class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="10"></div>                            </div>
+                    </div>
+
+            </div>
+        </div>
+   
+    </div>    
+                    
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: false,
+    
+  });
+
+$(document).ready(function() {
+    M.updateTextFields();
+
+
+    
+  });
+
+//Ocultar botones de paneles
+$("#Home").hide();
+$("#Registro").hide();
+$("#Codigo").hide();
+$("#Informacion").hide();
+
+//Npantalla= Numero de panel
+function pasar(Npantalla){
+
+if(Npantalla==0){
+  $("#Home").hide();
+$("#Registro").hide();
+$("#Codigo").hide();
+$("#Informacion").hide();
+}else if(Npantalla==1)
+{
+
+  //Cambio la clase para cambiar los colores #OPTIMIZAR
+  $("#Registro").addClass("amber");
+  $("#Registro").removeClass("black");
+
+  $("#Codigo").removeClass("green");
+  $("#Codigo").addClass("black");
+
+  $("#Informacion").removeClass("blue");
+  $("#Informacion").addClass("black");
+
+  //Aparecen los botones #Optimizar
+  $("#Home").show();
+  $("#Registro").show();
+  $("#Codigo").show();
+  $("#Informacion").show();
+}else if(Npantalla==2)
+{
+
+    //Cambio la clase para cambiar los colores #OPTIMIZAR
+
+  $("#Codigo").addClass("green");
+  $("#Codigo").removeClass("black");
+  
+  $("#Registro").removeClass("amber");
+  $("#Registro").addClass("black");
+
+  $("#Informacion").removeClass("blue");
+  $("#Informacion").addClass("black");
+
+  //Aparecen los botones #Optimizar
+ 
+  $("#Home").show();
+  $("#Registro").show();
+  $("#Codigo").show();
+  $("#Informacion").show();
+}else if(Npantalla==3)
+{
+    //Cambio la clase para cambiar los colores #OPTIMIZAR
+
+  $("#Informacion").addClass("blue");
+  $("#Informacion").removeClass("black");
+  
+  $("#Registro").removeClass("amber");
+  $("#Registro").addClass("black");
+
+  $("#Codigo").removeClass("green");
+  $("#Codigo").addClass("black");
+
+    //Aparecen los botones #Optimizar
+
+  $("#Home").show();
+  $("#Registro").show();
+  $("#Codigo").show();
+  $("#Informacion").show();
+}
+else
+{
+  
+//Mostrar botones de paneles
+$("#Home").show();
+  $("#Registro").show();
+  $("#Codigo").show();
+  $("#Informacion").show();
+}
+
+  
+    $('.carousel.carousel-slider').carousel('set',Npantalla);
+
+  };
+
+ 
+    $('.fixed-action-btn').floatingActionButton();
+
+    
+    M.updateTextFields();
+  
+  
+  function metodos(){
+  
+  var control = "";
+
+    if ($('#cedula').val() == "" || $('#nombre').val() == "" || $('#apellido').val() == "" || $('#direccion').val() == "")
+    {
+      
+      M.toast({html: 'Debe llenar todos los campos'});
+
+    }else{
+
+      $.post("probarCedula.php",
+        {
+            cedula: $('#cedula').val()
+        },
+        function(data, status){
+          let datos = JSON.parse(data);
+           if (datos.resultado == "true"){
+                      
+                $.post("probar.php",
+                    {
+                        cedula: $('#cedula').val(),
+                        nombre: $('#nombre').val(),
+                        apellido: $('#apellido').val(),
+                        direccion: $('#direccion').val()
+                    },
+                    function(data, status){
+                      let datos = JSON.parse(data);
+                      $("#digito1").text(datos.resultado.substr(0,1));
+                      $("#digito2").text(datos.resultado.substr(1,2));
+                      $("#digito3").text(datos.resultado.substr(2,3));
+                      $("#digito4").text(datos.resultado.substr(3,4));
+                        
+                  });
+                
+            }else{
+              M.toast({html: datos.resultado});
+            }
+            
+      });
+
+      
+        
+      
+
+    }
+      
+      
+    }
+
+
+    </script>
+
+</body>
+</html>
