@@ -28,7 +28,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="https://fonts.googleapis.com/css?family=Acme|Fredoka+One|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-
+    <title>Creere</title>
   </head>
 
   <body>
@@ -61,8 +61,8 @@
                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5039233268376!2d-67.5241265859823!3d7.842207708605568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e787d8217140acf%3A0xec577a3245c0d19f!2sMenca+de+Leoni%2C+La+Palmita+7007%2C+Apure!5e0!3m2!1ses!2sve!4v1538486842907" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                             <div class="carousel-item white-text" id="panel2" >
-                              <h3 style="font-family: 'Acme', sans-serif;">Para que queremos esta informacion?</h3>
-                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet natus dolore obcaecati excepturi similique voluptas dolorum nulla commodi, cumque saepe libero, laborum exercitationem vero accusantium fuga deleniti voluptatum omnis fugiat. asdasss asdasd sd asd asd asd asd asdasd as dasd as sdasdas asd asdas </h5>
+                              <h3 style="font-family: 'Acme', sans-serif;">¿Para que queremos esta informacion?</h3>
+                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;"> El equipo organizador de Creeré 2018 quiere saber que cuanto alcance tendra este evento en la poblacion y en que zonas tuvo una mayor influencia nuestro mensaje, esta informacion la tomaremos en cuenta para realizar proximas actividades.</h5>
                             </div>
                             <div class="carousel-item green white-text" href="#three!" id="panel3">
 
@@ -97,8 +97,8 @@
 
 
 
-                              <h3 style="font-family: 'Acme', sans-serif;">Por que es importante este codigo?</h3>
-                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet natus dolore obcaecati excepturi similique voluptas dolorum nulla commodi, cumque saepe libero, laborum exercitationem vero accusantium fuga deleniti voluptatum omnis fugiat. asdasss asdasd sd asd asd asd asd asdasd as dasd as sdasdas asd asdas </h5>
+                              <h3 style="font-family: 'Acme', sans-serif;">¿Porque es importante este codigo?</h3>
+                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Al registrarte debes guardar o imprimir el código generado. En nuestra actividad Creeré 2018 este código lo podrás presentar en uno de nuestros centros destinados a recibir estos códigos y te podrás llevar un recuerdo de nuestra actividad de fe.</h5>
                               <h4 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Tu Codigo es:</h4>
                               <h3 > <spam id="digito1">*</spam><spam id="digito2" class=" amber-text">*</spam><spam id="digito3" class="green-text">*</spam><spam id="digito4" class=" blue-text">*</spam></h3>
                            
@@ -137,8 +137,7 @@
                            
                             </div>
                             <div class="carousel-item blue white-text" href="#four!" id="panel4">
-                              <h3 style="font-family: 'Acme', sans-serif;">Aqui inspirate</h3>
-                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet natus dolore obcaecati excepturi similique voluptas dolorum nulla commodi, cumque saepe libero, laborum exercitationem vero accusantium fuga deleniti voluptatum omnis fugiat. asdasss asdasd sd asd asd asd asd asdasd as dasd as sdasdas asd asdas </h5>
+                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Dejanos tu comentario, nos gustaria saber que piensas de esta actividad y que nos digas porque deberiamos o no Creer que Dios hara algo en nuestra nacion y en nuestra vida, cuentanos ¿que te motiva a creer?, ¿porque aun tienes esperanza? o ¿porque crees que no la hay? nos encargaremos de compartir esta informacion para que bendiga a miles de personas.</h5>
                             <div class="fixed-action-btn">
                                 
                                 <a class="btn-floating btn-small black" href="http://www.google.com/" target=”_blank”>
@@ -177,7 +176,7 @@
                              <div id="logo"></div>
                                 
                            
-                             <p id="texto-home" >Hola yo soy jose Andres, me gusta el yogurt, te gusta la leche piche? dale al boton si es asi.</p> 
+                             <p id="texto-home" >Hola, somos el equipo organizador de Creere 2018 y estamos completamente convencidos de que lo mejor para nuestra nacion y para tu vida esta por venir, "Si no eres parte de solucion eres parte del problema" si tu también crees Dale al botón y únete a nuestra mega actividad de fe.</p> 
                               <center> 
                                 <a id="Play" class="btn-floating btn-large waves-effect waves-light black"  onclick="pasar(1)"><i class="material-icons">play_arrow</i></a>
                               </center>
@@ -439,7 +438,7 @@
 
                             </div>
                             <div class="carousel-item blue lighten-5 black-text" style="overflow-y: scroll; height: 100%; padding-left: 2.5%" href="#four!">
-                                <div  class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="10"></div>                            </div>
+                                <div  class="fb-comments" data-href="https://stark-lake-51057.herokuapp.com/" data-width="100%" data-numposts="10"></div>                            </div>
                     </div>
 
             </div>
