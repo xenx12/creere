@@ -23,6 +23,6 @@ while($check_codigo>0){
 
 mysqli_query($mysqli,"INSERT INTO personas VALUES('$cedula','$nombre','$apellido','$direccion','$codigo')");
 
-echo '{"resultado": "'.$codigo.}.'"};
+echo '{"resultado": "'.$codigo.'"}';
 
 ?>

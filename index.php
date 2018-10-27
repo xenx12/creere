@@ -137,19 +137,20 @@
                            
                             </div>
                             <div class="carousel-item blue white-text" href="#four!" id="panel4">
+                            <h3 style="font-family: 'Acme', sans-serif;">¡Queremos saber tu opinión!</h3>
                               <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Dejanos tu comentario, nos gustaria saber que piensas de esta actividad y que nos digas porque deberiamos o no Creer que Dios hara algo en nuestra nacion y en nuestra vida, cuentanos ¿que te motiva a creer?, ¿porque aun tienes esperanza? o ¿porque crees que no la hay? nos encargaremos de compartir esta informacion para que bendiga a miles de personas.</h5>
                             <div class="fixed-action-btn">
                                 
-                                <a class="btn-floating btn-small black" href="http://www.google.com/" target=”_blank”>
+                                <a class="btn-floating btn-small black" href="https://www.facebook.com/Creer%C3%A9-2018-554153575037422/" target=”_blank”>
                                   <img src="facebook.png" alt="">                      
                                 </a>
-                                <a class="btn-floating btn-small black" href="http://www.google.com/" target=”_blank”>
+                                <a class="btn-floating btn-small black" href="http://www.twitter.com/" target=”_blank”>
                                   <img src="twitter.png" alt="">                      
                                 </a>
-                                <a class="btn-floating btn-small black" href="http://www.google.com/" target=”_blank”>
+                                <a class="btn-floating btn-small black" href="https://www.instagram.com/jtudtransformada/" target=”_blank”>
                                   <img src="instagram.png" alt="">                      
                                 </a>
-                                <a class="btn-floating btn-small black" href="http://www.google.com/" target=”_blank”>
+                                <a class="btn-floating btn-small black" href="http://www.youtube.com/" target=”_blank”>
                                   <img src="youtube.png" alt="">                      
                                 </a>
                               </div>
@@ -176,7 +177,7 @@
                              <div id="logo"></div>
                                 
                            
-                             <p id="texto-home" >Hola, somos el equipo organizador de Creere 2018 y estamos completamente convencidos de que lo mejor para nuestra nacion y para tu vida esta por venir, "Si no eres parte de solucion eres parte del problema" si tu también crees Dale al botón y únete a nuestra mega actividad de fe.</p> 
+                             <p id="texto-home" >Estamos completamente convencidos de que lo mejor para nuestra nacion y para tu vida esta por venir, si tu también crees Dale al botón y únete.</p> 
                               <center> 
                                 <a id="Play" class="btn-floating btn-large waves-effect waves-light black"  onclick="pasar(1)"><i class="material-icons">play_arrow</i></a>
                               </center>
@@ -361,14 +362,14 @@
 
                                   <div class="row">
                                     <div class="input-field col s6 offset-s3">
-                                      <input placeholder="23423545" id="cedula" type="text" class="validate">
+                                      <input placeholder="23423545" id="cedulaM" type="text" class="validate">
                                       <label for="cedula">Cedula</label>
                                     </div>
                                   </div>
                                   <div class="row">
-                                      <button class="btn waves-effect waves-light green" type="submit" name="action">Mostrar
-                                        <i class="material-icons right">send</i>
-                                      </button>
+                                    <div class="btn waves-effect waves-light amber" onclick="mostrarCodigo()" >Mostrar
+                                      <i class="material-icons right">send</i>
+                                    </div>
                                   
                                     
                                   </div>
@@ -555,10 +556,51 @@ $("#Home").show();
     
     M.updateTextFields();
   
-  
+  function mostrarCodigo(){
+    if ($('#cedulaM').val() == "")
+    {
+      
+      M.toast({html: 'Debe llenar todos los campos'});
+
+    }else{
+
+      $.post("mostrar.php",
+        {
+            cedula: $('#cedulaM').val()
+        },
+        function(data, status){
+
+          let datos = JSON.parse(data);
+
+           if (datos.estatus == "true"){
+
+            $("#digito1").text(datos.resultado.substr(0,1));
+            $("#digito2").text(datos.resultado.substr(1,1));
+            $("#digito3").text(datos.resultado.substr(2,1));
+            $("#digito4").text(datos.resultado.substr(3,1));          
+                
+                
+            }else{
+              M.toast({html: datos.resultado});
+
+              $("#digito1").text("*");
+            $("#digito2").text("*");
+            $("#digito3").text("*");
+            $("#digito4").text("*"); 
+            }
+            
+      });
+
+      
+        
+      
+
+    }
+  }
+
   function metodos(){
   
-  var control = "";
+  
 
     if ($('#cedula').val() == "" || $('#nombre').val() == "" || $('#apellido').val() == "" || $('#direccion').val() == "")
     {
@@ -583,11 +625,19 @@ $("#Home").show();
                         direccion: $('#direccion').val()
                     },
                     function(data, status){
+                     
                       let datos = JSON.parse(data);
+
+                      pasar(2);
                       $("#digito1").text(datos.resultado.substr(0,1));
-                      $("#digito2").text(datos.resultado.substr(1,2));
-                      $("#digito3").text(datos.resultado.substr(2,3));
-                      $("#digito4").text(datos.resultado.substr(3,4));
+                      $("#digito2").text(datos.resultado.substr(1,1));
+                      $("#digito3").text(datos.resultado.substr(2,1));
+                      $("#digito4").text(datos.resultado.substr(3,1));
+
+                      $('#cedula').val("");
+                      $('#nombre').val("");
+                      $('#apellido').val("");
+                      $('#direccion').val("");
                         
                   });
                 
@@ -606,6 +656,49 @@ $("#Home").show();
       
     }
 
+$(document).ready(function() {
+
+  
+    $("#cedula").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl/cmd+A
+            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+             // Allow: Ctrl/cmd+C
+            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+             // Allow: Ctrl/cmd+X
+            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+
+    $("#cedulaM").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl/cmd+A
+            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+             // Allow: Ctrl/cmd+C
+            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+             // Allow: Ctrl/cmd+X
+            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+});
 
     </script>
 
