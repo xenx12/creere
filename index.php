@@ -18,14 +18,14 @@
     
         #logo
     {
-    width: 30%;
-    height: auto;
+    width: 75%;
+    height: 40%;
     background:url(logo.png);
     background-size: cover;
     margin: 0;
     padding: 0;
     position: relative;
-    left: 5%;
+    left: 12.5%;
         /*
         Trabajar en la parte responsive de la version mobile
         */
