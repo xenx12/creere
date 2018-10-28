@@ -1,21 +1,5 @@
 <!DOCTYPE html>
 
-
-
- <!--LAS PARTES IMPORTANTES ESTAN SEPARADAS POR GRANDES ESPACIOS Y ESTAN COMENTADAS
-  SON SOLO TRES PARTES LAS QUE TIENES QUE TOCAR.
-
-  LA PARTE DE REGISTRO: #formregistro
-  LA PARTE VISUAL DE MOSTRAR CODIGO: #visualcodigo
-  EL FORM DEL CODIGO: #formcodigo
-
-  puedes llegar a ellas rapidamente apretando 
-  Ctrl + F y luego el nombre correspondiente ejemplo "#form"
--->
-
-
-
-
 <html>
   <head>
     <!--Import Google Icon Font-->
@@ -177,7 +161,7 @@
                              <div id="logo"></div>
                                 
                            
-                             <p id="texto-home" >Estamos completamente convencidos de que lo mejor para nuestra nacion y para tu vida esta por venir, si tu también crees Dale al botón y únete.</p> 
+                             <p id="texto-home" >Estamos completamente convencidos de que lo mejor para nuestra nacion y para tu vida esta por venir, si tu también crees, Dale al botón y únete.</p> 
                               <center> 
                                 <a id="Play" class="btn-floating btn-large waves-effect waves-light black"  onclick="pasar(1)"><i class="material-icons">play_arrow</i></a>
                               </center>
@@ -577,7 +561,12 @@ $("#Home").show();
             $("#digito1").text(datos.resultado.substr(0,1));
             $("#digito2").text(datos.resultado.substr(1,1));
             $("#digito3").text(datos.resultado.substr(2,1));
-            $("#digito4").text(datos.resultado.substr(3,1));          
+            $("#digito4").text(datos.resultado.substr(3,1)); 
+
+                   
+            
+             M.toast({html: "Tu Codigo es: " + datos.resultado});
+         
                 
                 
             }else{
@@ -638,6 +627,9 @@ $("#Home").show();
                       $('#nombre').val("");
                       $('#apellido').val("");
                       $('#direccion').val("");
+
+                      M.toast({html: "Tu Codigo es: " + datos.resultado});
+
                         
                   });
                 
