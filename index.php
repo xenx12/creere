@@ -13,6 +13,28 @@
     <link href="https://fonts.googleapis.com/css?family=Acme|Fredoka+One|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Creere</title>
+    <style>
+      @media  (max-width: 600px) {
+    
+        #logo
+    {
+    width: 30%;
+    height: auto;
+    background:url(logo.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 5%;
+        /*
+        Trabajar en la parte responsive de la version mobile
+        */
+  
+    }
+
+
+}
+    </style>
   </head>
 
   <body>
@@ -42,7 +64,7 @@
                               <h5 style="font-family: 'Acme', sans-serif;">Lugar: "Parque Menca de Leoni"</h5>
                               <h5 style="font-family: 'Acme', sans-serif;">Hora: 5:00pm - 9:00pm</h5>
                               <h5 style="font-family: 'Acme', sans-serif;">Direccion: "Biruaca, esto esto esto esto esto"</h5>
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5039233268376!2d-67.5241265859823!3d7.842207708605568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e787d8217140acf%3A0xec577a3245c0d19f!2sMenca+de+Leoni%2C+La+Palmita+7007%2C+Apure!5e0!3m2!1ses!2sve!4v1538486842907" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.0241941410545!2d-67.47267516822217!3d7.890006755704504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e78812b90b9d39f%3A0xd8d61f45150f0c56!2sUnnamed+Road%2C+San+Fernando+de+Apure+7001%2C+Apure!5e0!3m2!1ses!2sve!4v1540759773767" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                             <div class="carousel-item white-text" id="panel2" >
                               <h3 style="font-family: 'Acme', sans-serif;">¿Para que queremos esta informacion?</h3>
