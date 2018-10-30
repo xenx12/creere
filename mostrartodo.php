@@ -2,11 +2,11 @@
 
 require("conexion.php");
 
-$cedula = $_POST["cedula"];
+$codigo = $_POST["cedula"];
 
 
 
-$checkcedula=mysqli_query($mysqli,"SELECT * FROM personas WHERE cedula='$cedula'");
+$checkcedula=mysqli_query($mysqli,"SELECT * FROM personas WHERE codigo='$codigo'");
 $check_cedula=mysqli_num_rows($checkcedula);
 if($check_cedula>0){
 

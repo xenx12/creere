@@ -16,8 +16,8 @@
 <body>
 <div class="row">
 <div class="input-field col s6 offset-s3">
-      <input placeholder="23423545" id="cedulaM" type="text" class="validate">
-      <label for="cedula">Cedula</label>
+      <input placeholder="A123" id="cedulaM" type="text" class="validate">
+      <label for="cedula">Codigo</label>
       <div class="btn waves-effect waves-light amber" onclick="mostrarCodigo()" >Mostrar
  <i class="material-icons right">send</i>
 </div>
