@@ -12,7 +12,7 @@ if($check_cedula>0){
 
     while($row = mysqli_fetch_assoc($checkcedula)) {
        
-        echo '{"direccion": "'.$row["direccion"].'","apellido": "'.$row["apellido"].'","nombre": "'.$row["nombre"].'","codigo": "'.$row["codigo"].'", "estatus" : "true"}';
+        echo '{"nombre": "'.$row["nombre"].'","apellido": "'.$row["apellido"].'","direccion": "'.$row["direccion"].'","codigo": "'.$row["codigo"].'", "estatus" : "true"}';
     }
     
 }else{

@@ -14,14 +14,46 @@
     <title>Admin - Creere</title>
 </head>
 <body>
+<div class="row">
 <div class="input-field col s6 offset-s3">
       <input placeholder="23423545" id="cedulaM" type="text" class="validate">
       <label for="cedula">Cedula</label>
-      
+      <div class="btn waves-effect waves-light amber" onclick="mostrarCodigo()" >Mostrar
+ <i class="material-icons right">send</i>
+</div>
+</div>
+<div class="row">
+
+  <div class="col s6 offset-s3">
+  <table>
+        <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Direccion</th>
+              <th>Cedula</th>
+              <th>Codigo</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td id="nombre">null</td>
+            <td id="apellido">null</td>
+            <td id="direccion">null</td>
+            <td id="cedula">null</td>
+            <td id="codigo">null</td>
+          </tr>
+          
+        </tbody>
+      </table>
+  </div>
+
 </div>
 
-<div class="btn waves-effect waves-light amber" onclick="mostrarCodigo()" >Mostrar
- <i class="material-icons right">send</i>
+
+  
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -42,11 +74,14 @@ function mostrarCodigo(){
 
     }else{
 
+      
+
       $.post("mostrartodo.php",
         {
             cedula: $('#cedulaM').val()
         },
         function(data, status){
+          console.log("gola");
 
           console.log(data);
 
@@ -54,15 +89,25 @@ function mostrarCodigo(){
           let datos = JSON.parse(data);
 
            if (datos.estatus == "true"){
+            $("#nombre").text(datos.nombre);
+            $("#apellido").text(datos.apellido);
+            $("#direccion").text(datos.direccion);
+            $("#codigo").text(datos.codigo); 
+            $("#cedula").text(datos.cedula); 
 
-            console.log(datos);
+            
            // M.toast({html: "Tu Codigo es: " + datos.resultado});
          
                 
                 
             }else{
-              console.log(datos + "false");
-            //  M.toast({html: datos.resultado});
+              
+             M.toast({html: datos.resultado});
+             $("#nombre").text("null");
+            $("#apellido").text("null");
+            $("#direccion").text("null");
+            $("#codigo").text("null"); 
+            $("#cedula").text("null"); 
 
             }
             
