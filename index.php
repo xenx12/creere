@@ -153,7 +153,7 @@
                                 <a class="btn-floating btn-small black" href="http://www.twitter.com/" target=”_blank”>
                                   <img src="twitter.png" alt="">                      
                                 </a>
-                                <a class="btn-floating btn-small black" href="https://www.instagram.com/jtudtransformada/" target=”_blank”>
+                                <a class="btn-floating btn-small black" href="https://www.instagram.com/creere2018/" target=”_blank”>
                                   <img src="instagram.png" alt="">                      
                                 </a>
                                 <a class="btn-floating btn-small black" href="http://www.youtube.com/" target=”_blank”>
