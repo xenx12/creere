@@ -1,3 +1,17 @@
+<?php 
+
+require("conexion.php");
+
+
+$checkcedula=mysqli_query($mysqli,"SELECT * FROM personas ");
+$check_cedula=mysqli_num_rows($checkcedula);
+$rowcount=mysqli_num_rows($checkcedula);
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +29,7 @@
 </head>
 <body>
 <div class="row">
-<div class="input-field col s6 offset-s3">
+<div class="input-field col s6">
       <input placeholder="A123" id="cedulaM" type="text" class="validate">
       <label for="cedula">Codigo</label>
       <div class="btn waves-effect waves-light amber" onclick="mostrarCodigo()" >Mostrar
@@ -24,7 +38,7 @@
 </div>
 <div class="row">
 
-  <div class="col s6 offset-s3">
+  <div class="col s6 ">
   <table>
         <thead>
           <tr>
@@ -48,11 +62,53 @@
         </tbody>
       </table>
   </div>
-
 </div>
 
+  <div class="divider"></div>
 
+<div class="row">
+
+  <div class="col s6">
   
+  <center><h2>Numero de personas Registradas</h2></center>
+  <center><h1><?php echo $rowcount; ?></h1></center>
+
+  </div>
+
+
+  <div class="col s6">
+
+    <table class="striped" >
+        <thead class="grey darken-1">
+          <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Direccion</th>
+              <th>Cedula</th>
+              <th>Codigo</th>
+          </tr>
+        </thead>
+
+        <tbody
+        <?php
+        while($row = mysqli_fetch_assoc($checkcedula)) {
+               
+        echo '<tr>';
+        echo '<td id="nombre">'.$row["nombre"].'</td>';
+        echo '<td id="apellido">'.$row["apellido"].'</td>';
+        echo '<td id="direccion">'.$row["direccion"].'</td>';
+        echo '<td id="cedula">'.$row["cedula"].'</td>';
+        echo '<td id="codigo">'.$row["codigo"].'</td>';
+        echo '</tr>';
+
+        }
+        ?>
+        </tbody>
+      </table>
+
+  </div>
+
+</div> 
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
