@@ -3,10 +3,10 @@
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$server = "localhost";
-$username = "root";
-$password = "";
-$db = "creere";
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
 
 		$mysqli = new mysqli($server, $username, $password, $db);
 		if ($mysqli -> connect_errno) {
