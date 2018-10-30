@@ -104,7 +104,7 @@
 
 
                               <h3 style="font-family: 'Acme', sans-serif;">¿Porque es importante este codigo?</h3>
-                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Al registrarte debes guardar o imprimir el código generado. En nuestra actividad Creeré 2018 este código lo podrás presentar en uno de nuestros centros destinados a recibir estos códigos y te podrás llevar un recuerdo de nuestra actividad de fe.</h5>
+                              <h5 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Al registrarte debes guardar o imprimir el código generado. En nuestra actividad Creeré 2018 este código lo podrás presentar en uno de nuestros centros destinados a recibir estos códigos y podrás participar para llevarte un recuerdo de nuestra actividad de Fe.</h5>
                               <h4 style="font-family: 'Acme', sans-serif; margin-left: 5%; margin-right: 5%;">Tu Codigo es:</h4>
                               <h3 > <spam id="digito1">*</spam><spam id="digito2" class=" amber-text">*</spam><spam id="digito3" class="green-text">*</spam><spam id="digito4" class=" blue-text">*</spam></h3>
                            
