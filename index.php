@@ -150,13 +150,10 @@
                                 <a class="btn-floating btn-small black" href="https://www.facebook.com/Creer%C3%A9-2018-554153575037422/" target=”_blank”>
                                   <img src="facebook.png" alt="">                      
                                 </a>
-                                <a class="btn-floating btn-small black" href="http://www.twitter.com/" target=”_blank”>
-                                  <img src="twitter.png" alt="">                      
-                                </a>
                                 <a class="btn-floating btn-small black" href="https://www.instagram.com/creere2018/" target=”_blank”>
                                   <img src="instagram.png" alt="">                      
                                 </a>
-                                <a class="btn-floating btn-small black" href="http://www.youtube.com/" target=”_blank”>
+                                <a class="btn-floating btn-small black" href="https://www.youtube.com/channel/UCVDAeEEgZQGejRP9VrYz_rQ" target=”_blank”>
                                   <img src="youtube.png" alt="">                      
                                 </a>
                               </div>
