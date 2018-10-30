@@ -95,7 +95,8 @@ function mostrarCodigo(){
             $("#codigo").text(datos.codigo); 
             $("#cedula").text(datos.cedula); 
 
-            
+            M.toast({html: "Datos encontrados"});
+
            // M.toast({html: "Tu Codigo es: " + datos.resultado});
          
                 
