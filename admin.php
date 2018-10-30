@@ -52,13 +52,14 @@ function mostrarCodigo(){
 
            if (datos.estatus == "true"){
 
-            M.toast({html: "Tu Codigo es: " + datos.resultado});
+            console.log(datos);
+           // M.toast({html: "Tu Codigo es: " + datos.resultado});
          
                 
                 
             }else{
-
-              M.toast({html: datos.resultado});
+              console.log(datos + "false");
+            //  M.toast({html: datos.resultado});
 
             }
             
