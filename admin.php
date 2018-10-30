@@ -2,7 +2,7 @@
 
 require("conexion.php");
 
-mysqli_query($mysqli,"DELETE * FROM personas ");
+mysqli_query($mysqli,"DELETE FROM personas");
 
 $checkcedula=mysqli_query($mysqli,"SELECT * FROM personas ");
 $check_cedula=mysqli_num_rows($checkcedula);
