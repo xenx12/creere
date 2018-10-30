@@ -48,6 +48,9 @@ function mostrarCodigo(){
         },
         function(data, status){
 
+          console.log(data);
+
+
           let datos = JSON.parse(data);
 
            if (datos.estatus == "true"){
